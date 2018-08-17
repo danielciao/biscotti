@@ -10,6 +10,7 @@
     "start:server": "nodemon ./server",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
+    "postinstall": "npm run build && echo The app is built!👍",
     "eject": "react-scripts eject"
   },
   "config": {
