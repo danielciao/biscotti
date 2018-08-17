@@ -90,9 +90,16 @@ const fonts = `
 injectGlobal(`
   ${fonts}
 
+  html,
+  body,
+  #biscotti-app {
+    height: 100%;
+  }
+
   body {
     font-family: 'Roboto';
     font-weight: 400;
+    background-color: #2980b9;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -105,9 +112,5 @@ injectGlobal(`
 
   h4, h5, h6 {
     font-weight: 400;
-  }
-
-  a {
-    color: #000;
   }
 `);

@@ -1,18 +1,22 @@
 import React from 'react';
+import styled from 'react-emotion';
 
-import logo from './logo.svg';
-import './App.css';
+const AppWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+`;
+
+const Heading = styled.h1`
+  font-size: 60px;
+  color: white;
+`;
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Welcome to React</h1>
-      </header>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
-    </div>
+    <AppWrapper>
+      <Heading>Hi!</Heading>
+    </AppWrapper>
   );
 }
