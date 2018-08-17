@@ -20,19 +20,32 @@ export default styled.div`
   @media only screen and (max-width: 480px) {
     background-image: url(${background480});
   }
+
+  @media only screen and (min-resolution: 2dppx) and (max-width: 480px) {
+    background-image: url(${background1027});
+  }
   @media only screen and (min-width: 481px) and (max-width: 1027px) {
     background-image: url(${background1027});
+  }
+
+  @media only screen and (min-resolution: 2dppx) and (min-width: 481px) and (max-width: 1027px) {
+    background-image: url(${background1450});
   }
   @media only screen and (min-width: 1028px) and (max-width: 1450px) {
     background-image: url(${background1450});
   }
+
+  @media only screen and (min-resolution: 2dppx) and (min-width: 1028px) and (max-width: 1450px) {
+    background-image: url(${background1795});
+  }
   @media only screen and (min-width: 1451px) and (max-width: 1795px) {
     background-image: url(${background1795});
   }
-  @media only screen and (min-width: 1796px) and (max-width: 1920px) {
+
+  @media only screen and (min-resolution: 2dppx) and (min-width: 1796px) {
     background-image: url(${background1920});
   }
-  @media only screen and (min-width: 1921px) {
+  @media only screen and (min-width: 1796px) {
     background-image: url(${background1920});
   }
 `;
