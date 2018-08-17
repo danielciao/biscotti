@@ -17,16 +17,16 @@ app.use(logger('dev'));
 app.use(compression());
 app.use(express.static(ASSET_PATH));
 
-// static page
-app.get('/[^/api]*', (req, res) => {
-  res.sendFile(path.resolve(ASSET_PATH, 'index.html'));
-});
-
 // API
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', routes());
+
+// static page
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(ASSET_PATH, 'index.html'));
+});
 
 // 404
 app.use((req, res) => {
