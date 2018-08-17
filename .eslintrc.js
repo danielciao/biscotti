@@ -11,11 +11,12 @@ module.exports = {
     'prettier',
     'prettier/react'
   ],
-  plugins: ['import', 'flowtype', 'prettier', 'jsx-a11y', 'prettier/react'],
+  plugins: ['import', 'flowtype', 'prettier', 'jsx-a11y', 'jest'],
   env: {
     browser: true,
     es6: true,
-    node: true
+    node: true,
+    'jest/globals': true
   },
   parserOptions: {
     ecmaVersion: 6,
@@ -27,19 +28,9 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', prettierOptions],
     indent: [2, 2, { SwitchCase: 1 }],
-    'eslint padding-lin-between-statements': [
-      'error',
-      {
-        blankLine: 'always',
-        prev: ['const', 'let', 'var', 'function'],
-        next: '*'
-      },
-      {
-        blankLine: 'always',
-        prev: ['const', 'let', 'var'],
-        next: ['const', 'let', 'var']
-      }
-    ],
-    'react/forbid-prop-types': 0
+    'no-console': 1,
+    'no-unused-vars': 1,
+    'react/forbid-prop-types': 0,
+    'react/jsx-filename-extension': 0
   }
 };
