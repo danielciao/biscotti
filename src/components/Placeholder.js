@@ -1,9 +1,9 @@
 import styled from 'react-emotion';
 
 import background480 from '../../public/static/images/background@480.jpg';
-import background1027 from '../../public/static/images/background@1027.jpg';
-import background1450 from '../../public/static/images/background@1450.jpg';
-import background1795 from '../../public/static/images/background@1795.jpg';
+import background1058 from '../../public/static/images/background@1058.jpg';
+import background1477 from '../../public/static/images/background@1477.jpg';
+import background1803 from '../../public/static/images/background@1803.jpg';
 import background1920 from '../../public/static/images/background@1920.jpg';
 
 export default styled.div`
@@ -16,36 +16,21 @@ export default styled.div`
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-image: url(${background480});
 
-  @media only screen and (max-width: 480px) {
-    background-image: url(${background480});
-  }
-
-  @media only screen and (min-resolution: 2dppx) and (max-width: 480px) {
-    background-image: url(${background1027});
-  }
-  @media only screen and (min-width: 481px) and (max-width: 1027px) {
-    background-image: url(${background1027});
+  @media only screen and (min-width: 720px) {
+    background-image: url(${background1058});
   }
 
-  @media only screen and (min-resolution: 2dppx) and (min-width: 481px) and (max-width: 1027px) {
-    background-image: url(${background1450});
-  }
-  @media only screen and (min-width: 1028px) and (max-width: 1450px) {
-    background-image: url(${background1450});
+  @media only screen and (min-width: 1024px) {
+    background-image: url(${background1477});
   }
 
-  @media only screen and (min-resolution: 2dppx) and (min-width: 1028px) and (max-width: 1450px) {
-    background-image: url(${background1795});
-  }
-  @media only screen and (min-width: 1451px) and (max-width: 1795px) {
-    background-image: url(${background1795});
+  @media only screen and (min-width: 1280px) {
+    background-image: url(${background1803});
   }
 
-  @media only screen and (min-resolution: 2dppx) and (min-width: 1796px) {
-    background-image: url(${background1920});
-  }
-  @media only screen and (min-width: 1796px) {
+  @media only screen and (min-width: 1920px) {
     background-image: url(${background1920});
   }
 `;
