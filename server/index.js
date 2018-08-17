@@ -8,7 +8,7 @@ const compression = require('compression');
 const routes = require('./routes');
 
 const app = express();
-const port = process.env.port || 3001;
+const port = process.env.PORT || 3001;
 
 const ASSET_PATH = path.join(__dirname, '../build');
 
