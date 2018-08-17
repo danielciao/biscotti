@@ -30,6 +30,7 @@ module.exports = {
     indent: [2, 2, { SwitchCase: 1 }],
     'no-console': 1,
     'no-unused-vars': 1,
+    'no-param-reassign': 0,
     'import/no-extraneous-dependencies': 0,
     'react/forbid-prop-types': 0,
     'react/jsx-filename-extension': 0

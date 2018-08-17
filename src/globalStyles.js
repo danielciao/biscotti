@@ -96,10 +96,18 @@ injectGlobal(`
     height: 100%;
   }
 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   body {
     font-family: 'Roboto';
     font-weight: 400;
-    background-color: #2980b9;
+    background-color: black;
+    margin: 0;
+    padding: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
