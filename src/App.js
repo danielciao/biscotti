@@ -74,7 +74,7 @@ export default function App() {
           <h1>A New Era.</h1>
           <p>
             For years, we have allowed banks to have exclusive access to our financial information
-            and to take advantage of this.{' '}
+            and take advantage of this.{' '}
             <span className="underline">
               We believe we should have more say in how we want to use our data.
             </span>
@@ -83,16 +83,16 @@ export default function App() {
         </Content>
         <Social>
           <p>Connect with us on</p>
-          <a href="http://www.google.com">
+          <a href="https://www.facebook.com">
             <FacebookBox />
           </a>
-          <a href="http://www.google.com">
+          <a href="https://twitter.com">
             <TwitterBox />
           </a>
-          <a href="http://www.google.com">
+          <a href="https://plus.google.com">
             <GooglePlusBox />
           </a>
-          <a href="http://www.google.com">
+          <a href="https://medium.com">
             <Medium />
           </a>
         </Social>
