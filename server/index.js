@@ -14,7 +14,7 @@ const ASSET_PATH = path.join(__dirname, '../build');
 
 app.use(cors());
 app.use(logger('dev'));
-app.use(compression());
+app.use(compression({ threshold: 0 }));
 app.use(express.static(ASSET_PATH));
 
 // API
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', routes());
 
 // static page
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.resolve(ASSET_PATH, 'index.html'));
 });
 
